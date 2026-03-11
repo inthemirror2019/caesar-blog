@@ -1,6 +1,6 @@
 # 关于我
 
-你好，我是 Caesar Chu，一名程序员。
+你好，我是 Caesar Chu，一名电子爱好者，程序员。
 
 ## 技术栈
 - 前端：React、Vue、TypeScript
