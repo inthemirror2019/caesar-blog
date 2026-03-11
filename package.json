@@ -1,0 +1,26 @@
+{
+  "name": "caesar-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inthemirror2019/caesar-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/inthemirror2019/caesar-blog/issues"
+  },
+  "homepage": "https://github.com/inthemirror2019/caesar-blog#readme",
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
