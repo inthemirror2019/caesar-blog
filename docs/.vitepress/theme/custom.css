@@ -1,0 +1,9 @@
+/* 调整标题行高，避免g被截断 */
+.VPNavBarTitle .title {
+  line-height: 1.4 !important;
+}
+
+/* 或者调整标题的上下内边距 */
+.VPNavBarTitle {
+  padding: 4px 0 !important;
+}
