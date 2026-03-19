@@ -3,7 +3,24 @@
   line-height: 1.4 !important;
 }
 
-/* 或者调整标题的上下内边距 */
+/* 调整标题的上下内边距 */
 .VPNavBarTitle {
   padding: 4px 0 !important;
+}
+
+/* Giscus 评论区域样式 */
+.giscus-comment {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--vp-c-divider);
+}
+
+/* 确保 Giscus 在移动端正常显示 */
+.giscus-comment iframe {
+  width: 100% !important;
+}
+
+/* 平滑过渡主题切换 */
+.giscus-comment {
+  transition: opacity 0.3s ease;
 }
