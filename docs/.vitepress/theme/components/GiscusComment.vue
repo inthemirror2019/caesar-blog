@@ -1,27 +1,22 @@
 <script setup>
 import { onMounted, watch, ref } from 'vue'
+import { inBrowser } from 'vitepress'
 
-const isDark = ref(document.documentElement.classList.contains('dark'))
+const isDark = ref(false)
 const commentRef = ref(null)
 const loaded = ref(false)
+let observer = null
 
 function updateDarkMode() {
+  if (!inBrowser) return
   isDark.value = document.documentElement.classList.contains('dark')
 }
 
-// 监听暗黑模式变化
-const observer = new MutationObserver((mutations) => {
-  mutations.forEach((mutation) => {
-    if (mutation.attributeName === 'class') {
-      updateDarkMode()
-    }
-  })
-})
-
 function loadGiscus() {
-  if (loaded.value) return
+  if (loaded.value || !inBrowser) return
   loaded.value = true
 
+  updateDarkMode()
   const script = document.createElement('script')
   script.src = 'https://giscus.app/client.js'
   script.async = true
@@ -41,6 +36,7 @@ function loadGiscus() {
 }
 
 watch(isDark, () => {
+  if (!inBrowser) return
   const iframe = document.querySelector('.giscus-frame')
   if (!iframe) return
   const theme = isDark.value ? 'dark' : 'light'
@@ -57,7 +53,16 @@ watch(isDark, () => {
 })
 
 onMounted(() => {
+  if (!inBrowser) return
   updateDarkMode()
+  // 监听暗黑模式变化
+  observer = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => {
+      if (mutation.attributeName === 'class') {
+        updateDarkMode()
+      }
+    })
+  })
   observer.observe(document.documentElement, { attributes: true })
   loadGiscus()
 })
