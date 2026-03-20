@@ -112,4 +112,4 @@ script.setAttribute('data-term', window.location.pathname)
 
 ---
 
-*本文使用 OpenClaw 智能助手协助撰写*
+*本文使用 Claude Code 智能助手协助撰写*
