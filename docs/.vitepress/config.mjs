@@ -5,6 +5,7 @@ export default defineConfig({
   description: '技术博客，记录编程、生活和思考',
   base: '/caesar-blog/',
   appearance: 'dark',
+  ignoreDeadLinks: true,
   themeConfig: {
     siteTitle: 'Caesar\'s Blog',
     nav: [

@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
+    "generate-posts": "node scripts/generate-posts.js",
+    "dev": "npm run generate-posts && vitepress dev docs",
+    "build": "npm run generate-posts && vitepress build docs",
     "preview": "vitepress preview docs",
-    "deploy": "vitepress build docs && npx gh-pages -d docs/.vitepress/dist -b gh-pages"
+    "deploy": "npm run generate-posts && vitepress build docs && npx gh-pages -d docs/.vitepress/dist -b gh-pages"
   },
   "repository": {
     "type": "git",
