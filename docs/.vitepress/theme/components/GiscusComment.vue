@@ -48,7 +48,7 @@ function cleanupGiscus() {
 
 // 加载 Giscus 脚本
 function loadGiscus() {
-  if (loaded.value || typeof window === 'undefined') return
+  if (typeof window === 'undefined') return
 
   // 清理已存在的 Giscus
   cleanupGiscus()
@@ -70,13 +70,14 @@ function loadGiscus() {
   script.async = true
   script.crossOrigin = 'anonymous'
 
-  // Giscus 配置
+  // Giscus 配置 - 使用 pathname 确保每篇文章独立
   script.setAttribute('data-repo', 'inthemirror2019/caesar-blog')
   script.setAttribute('data-repo-id', 'R_kgDORj-Mvw')
   script.setAttribute('data-category', 'General')
   script.setAttribute('data-category-id', 'DIC_kwDORj-Mv84C4wwA')
   script.setAttribute('data-mapping', 'pathname')
-  script.setAttribute('data-strict', '0')
+  script.setAttribute('data-term', window.location.pathname)
+  script.setAttribute('data-strict', '1')
   script.setAttribute('data-reactions-enabled', '1')
   script.setAttribute('data-emit-metadata', '0')
   script.setAttribute('data-input-position', 'bottom')
