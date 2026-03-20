@@ -75,7 +75,7 @@ function loadGiscus() {
   script.setAttribute('data-repo-id', 'R_kgDORj-Mvw')
   script.setAttribute('data-category', 'General')
   script.setAttribute('data-category-id', 'DIC_kwDORj-Mv84C4wwA')
-  script.setAttribute('data-mapping', 'title')
+  script.setAttribute('data-mapping', 'pathname')
   script.setAttribute('data-strict', '0')
   script.setAttribute('data-reactions-enabled', '1')
   script.setAttribute('data-emit-metadata', '0')
