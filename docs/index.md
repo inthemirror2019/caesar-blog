@@ -1,29 +1,22 @@
----
-layout: home
+# Caesar's Blog
 
-hero:
-  name: Caesar's Blog
-  text: 技术 · 思考 · 分享
-  tagline: 记录编程学习、工作经验和生活感悟
-  image:
-    src: /logo.svg
-    alt: Blog Logo
-  actions:
-    - theme: brand
-      text: 开始阅读
-      link: /posts/
-    - theme: alt
-      text: GitHub
-      link: https://github.com/inthemirror2019
+<p style="text-align: center; color: var(--vp-c-text-2); font-size: 1.1rem; margin-bottom: 0.5rem;">
+  技术 · 思考 · 分享
+</p>
 
-features:
-  - icon: 💻
-    title: 技术分享
-    details: 编程技巧、架构设计、开源项目实践
-  - icon: 📝
-    title: 学习笔记
-    details: 技术学习过程中的思考和总结
-  - icon: 🔧
-    title: 工具教程
-    details: 实用开发工具和效率提升技巧
+<p style="text-align: center; color: var(--vp-c-text-3); font-size: 0.9rem; margin-bottom: 2rem;">
+  记录编程学习、工作经验和生活感悟
+</p>
+
 ---
+
+## 最新文章
+
+<PostList />
+
+---
+
+<div style="text-align: center; color: var(--vp-c-text-3); font-size: 0.875rem; padding: 1rem 0;">
+  <p>Powered by <a href="https://vitepress.dev/" target="_blank">VitePress</a></p>
+  <p>© 2026 Caesar Chu</p>
+</div>
