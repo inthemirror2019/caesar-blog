@@ -24,12 +24,13 @@ description: 按主题归档的工程笔记与资料索引
 | [资料汇总 · 原理图与器件手册（14 篇）](https://doc-nav-hub.app.workbuddy.host/docs/doc-collection/?sharecode=FJAOP6QKCF) | MOSFET 工作区与体二极管、LDO 运行范围、Buck 开关频率与电感权衡、CN3768 充电管理 | `MOSFET` `LDO` `Buck` |
 | [开关电源并联 · 下垂控制与均流方案](https://doc-nav-hub.app.workbuddy.host/docs/parallel-power/?sharecode=FJAOP6QKCF) | 下垂均流的数学、轻载误差为何最恶劣、ORing 与主动均流的本质区别、LTC4370 的闭环做法，附五档可并联性判据 | `并联` `均流` `ORing` |
 
-## 工具与杂项
+## AI 与选型
 
 | 文档 | 摘要 | 标签 |
 | --- | --- | --- |
 | [国内主流大模型 · 能力与性价比对比](https://doc-nav-hub.app.workbuddy.host/docs/llm-compare/?sharecode=FJAOP6QKCF) | 各家能力规格、官方价格（元/百万 tokens）与性价比排名，附选型结论 | `大模型` `价格` `选型` |
-| [B站收藏夹 · 索引与整理记录](https://doc-nav-hub.app.workbuddy.host/docs/bilibili/?sharecode=FJAOP6QKCF) | 55 个碎片收藏夹收敛成 15 个主题，435 条收藏按电源 / PCB / 嵌入式 / 电机等重新归位 | `哔哩哔哩` `整理` |
+
+<!-- 只在导航站收录、不放进本页的：《B站收藏夹 · 索引与整理记录》（用户指定） -->
 
 ---
 
