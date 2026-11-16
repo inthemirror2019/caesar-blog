@@ -23,6 +23,7 @@ description: 按主题归档的工程笔记与资料索引
 | --- | --- | --- |
 | [资料汇总 · 原理图与器件手册（14 篇）](https://doc-nav-hub.app.workbuddy.host/docs/doc-collection/?sharecode=FJAOP6QKCF) | MOSFET 工作区与体二极管、LDO 运行范围、Buck 开关频率与电感权衡、CN3768 充电管理 | `MOSFET` `LDO` `Buck` |
 | [开关电源并联 · 下垂控制与均流方案](https://doc-nav-hub.app.workbuddy.host/docs/parallel-power/?sharecode=FJAOP6QKCF) | 下垂均流的数学、轻载误差为何最恶劣、ORing 与主动均流的本质区别、LTC4370 的闭环做法，附五档可并联性判据 | `并联` `均流` `ORing` |
+| [线性稳压器 · 从串联调整管到 BJT 引脚](https://doc-nav-hub.app.workbuddy.host/docs/linear-regulator/?sharecode=FJAOP6QKCF) | 三极管为什么等于一只受控可变电阻、电位器如何改电压、为什么必然发热，附 B/C/E 引脚速记与速查表 | `线性稳压` `BJT` `负反馈` |
 
 ## AI 与选型
 
@@ -34,4 +35,4 @@ description: 按主题归档的工程笔记与资料索引
 
 ---
 
-最后整理：2026-11-14。新增文档后需要同步这一页。
+最后整理：2026-11-16。新增文档后需要同步这一页。
